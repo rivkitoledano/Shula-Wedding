@@ -201,26 +201,25 @@ const createBlessingArray = (startDate, endDate) => {
 };
 
 const Blessings = () => {
-    const startDate = new Date('2024-06-07');
-    const weddingDate = new Date('2024-07-04');
-    const blessings = createBlessingArray(startDate, weddingDate);
-
-    // קביעת הברכה להיום
     const [currentBlessing, setCurrentBlessing] = useState(null);
 
     useEffect(() => {
         const today = new Date();
-        const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
-        console.log("tooday ",dayIndex);
-        if (dayIndex >= 0 && dayIndex < blessings.length) {
-            setCurrentBlessing(BlessingData[dayIndex % BlessingData.length]);
+        const dayIndex = today.getDate() - 7; // Adjust index to match with BlessingData length
+        if (dayIndex >= 0 && dayIndex < BlessingData.length) {
+            if (BlessingData[dayIndex].title === '' && BlessingData[dayIndex].content === '' && BlessingData[dayIndex].sender === '') {
+                setCurrentBlessing(BlessingData[0]); // Display the first blessing if the current one is empty
+            } else {
+                setCurrentBlessing(BlessingData[dayIndex]);
+            }
         }
-    }, [blessings]);
+    }, []);
 
     return (
         <div className="blessingContainer">
             {currentBlessing && (
                 <>
+              
                     <div id="title"><StringDisplay longString={currentBlessing.title} /></div>
                     <div id="content"><StringDisplay longString={currentBlessing.content} /></div>
                     <div id="sender"><StringDisplay longString={currentBlessing.sender} /></div>

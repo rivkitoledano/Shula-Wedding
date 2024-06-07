@@ -36,3 +36,51 @@ margin-right: 5vw;
   font-size: 1rem; /* Adjust the size as needed */
   padding-top: 0.5vh;
 }
+
+#title {
+  margin-right: 5vw;
+  color: rgb(0, 0, 0);
+  padding-bottom: 1vh;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-shadow: 0 0 5px rgb(125, 93, 23); /* הוספת זוהר על הטקסט */
+}
+
+#content {
+  font-size: 1.1rem;
+  font-weight: 250;
+  text-shadow: 0 0 5px gold; /* הוספת זוהר על הטקסט */
+}
+
+#sender {
+  margin-right: 5vw;
+  font-size: 1rem;
+  padding-top: 0.5vh;
+  text-shadow: 0 0 5px rgb(104, 75, 20); /* הוספת זוהר על הטקסט */
+}@keyframes glowAnimation {
+  0% {
+    text-shadow: 0 0 5px rgba(177, 155, 26, 0.734);
+  }
+  20% {
+    text-shadow: 0 0 20px rgba(177, 155, 26, 0.734);
+  }
+  40% {
+    text-shadow: 0 0 20px rgba(128, 113, 25, 0.71);
+  }
+  60% {
+    text-shadow: 0 0 20px rgba(128, 113, 25, 0.71);
+  }
+  80% {
+    text-shadow: 0 0 20px rgba(104, 75, 20, 0.734);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(104, 75, 20, 0.734);
+  }
+}
+
+
+#title,
+#content,
+#sender {
+  animation: glowAnimation 2s infinite alternate;
+}
