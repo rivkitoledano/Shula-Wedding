@@ -6,6 +6,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shulamits-wedding</title>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDXJ26LzgA5CHneTk9rAXKNiiiZFJyVu7Y",
+        authDomain: "shula-wedding.firebaseapp.com",
+        projectId: "shula-wedding",
+        storageBucket: "shula-wedding.appspot.com",
+        messagingSenderId: "1094366385906",
+        appId: "1:1094366385906:web:1aebf7933c3e4b3574e26b",
+        measurementId: "G-GLNXTVZ3TH"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </head>
   <body>
     <div id="root"></div>
