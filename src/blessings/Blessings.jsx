@@ -16,9 +16,9 @@ const BlessingData = [
     },
     // כל הברכות החל מהשלישית עם מחרוזות ריקות
     {
-        title: '',
-        content: '',
-        sender: '',
+        title: 'שולמית המהממת!',
+        content: ' מזל טוב! שתזכו לבנות בית נאמן בישראל לתפארת! מתוך נחת בריאות ושמחה💛 שתצליחי בעבודה ובכל דבר שתעשי! מעריכה ואוהבת מאד',
+        sender: 'רינה ורנר',
     },
     {
         title: '',
