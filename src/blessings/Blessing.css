@@ -30,7 +30,7 @@
 }
 
 #content {
-  margin-right: 32%;
+  margin-right: 27%;
 
   font-size: 1.1rem;
   font-weight: 250;
@@ -38,7 +38,7 @@
 }
 
 #sender {
-  margin-right: 49%;
+  margin-right: 40%;
   font-size: 0.95rem;
   padding-top: 2vh;
   text-shadow: 0 0 5px rgb(104, 75, 20); /* הוספת זוהר על הטקסט */
@@ -67,5 +67,5 @@
 #title,
 #content,
 #sender {
-  animation: glowAnimation 2s infinite alternate;
+  animation: glowAnimation 4s infinite alternate;
 }
