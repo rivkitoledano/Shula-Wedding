@@ -5,7 +5,7 @@
   display: flex;
   justify-content: flex-start; /* Aligns items to the left */
   align-items: flex-start; /* Aligns items to the top */
-  width: 33%; /* Occupies the left quarter of the page */
+  width: 50%; /* Occupies the left quarter of the page */
   padding-left: 1vw;
   padding-top: 3.5vh;
   padding-right: 2%;
@@ -18,27 +18,10 @@
 }
 
 
-#title{
-margin-right: 5vw;
-  color: rgb(0, 0, 0);
-  padding-bottom: 1vh;
-  font-size: 1.5rem; /* Adjust the size as needed */
-  font-weight: 400;
-}
-#content{
-  font-size: 1.1rem; /* Adjust the size as needed */
-  font-weight: 250;
-}
 
-#sender{
-  margin-right: 5vw;
-
-  font-size: 1rem; /* Adjust the size as needed */
-  padding-top: 0.5vh;
-}
 
 #title {
-  margin-right: 5vw;
+  margin-right: 40%;
   color: rgb(0, 0, 0);
   padding-bottom: 1vh;
   font-size: 1.5rem;
@@ -47,15 +30,17 @@ margin-right: 5vw;
 }
 
 #content {
+  margin-right: 32%;
+
   font-size: 1.1rem;
   font-weight: 250;
   text-shadow: 0 0 5px gold; /* הוספת זוהר על הטקסט */
 }
 
 #sender {
-  margin-right: 5vw;
-  font-size: 1rem;
-  padding-top: 0.5vh;
+  margin-right: 49%;
+  font-size: 0.95rem;
+  padding-top: 2vh;
   text-shadow: 0 0 5px rgb(104, 75, 20); /* הוספת זוהר על הטקסט */
 }@keyframes glowAnimation {
   0% {
